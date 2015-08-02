@@ -4,7 +4,7 @@
 		'ngRoute',
 		'ngResource',
 		'ngAnimate',
-		'health.login',
+		// 'health.login',
 		'health.home'
 		])
 	.config(config)
@@ -14,10 +14,10 @@
 	function config($routeProvider,$httpProvider){
 		$routeProvider
 		.when('/',{
-			title : 'Login',
-			templateUrl : 'modules/login/views/login.html',
-			controller : 'loginController',
-			controllerAs : 'login'
+			title : 'Home',
+			templateUrl : 'modules/home/views/home.html',
+			controller : 'homeController',
+			controllerAs : 'home'
 		})
 		.otherwise({
 			redirectTo : '/'

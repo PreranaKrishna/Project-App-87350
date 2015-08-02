@@ -8,7 +8,7 @@
 		$routeProvider
 		.when('/',{
 			title : 'Login',
-			templateUrl : 'modules/login/views/home.html',
+			templateUrl : 'modules/login/views/login.html',
 			controller : 'loginController',
 			controllerAs : 'login'
 		})

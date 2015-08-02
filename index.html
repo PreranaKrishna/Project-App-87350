@@ -20,13 +20,22 @@
 	</head>
 	<body>
 		<div id="page-wrapper">
-			<div class="ng-cloak" ng-cloak id="splash">
+			<!-- <div class="ng-cloak" ng-cloak id="splash">
 				Loading...
-			</div>
+			</div> -->
 
-			<header class="hidden-sm hidden-md hidden-lg">
-				<h1 class="text-center">{{pageTitle}}</h1>
-			</header>
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			    <div class="navbar-header">
+			    	<a class="navbar-brand" href="#">HM</a>
+			    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="glyphicon glyphicon-align-justify" style="color:#fff;margin-top:-5px"></span>
+			      </button>
+			    </div>
+			  </div>
+			</nav>
+
 			<div id="page-content">
 				<div ng-view class="view-content"></div>
 			</div>
@@ -55,10 +64,17 @@
 		<!-- Main  -->
 		<script src="app.js" type="text/javascript"></script>
 		<!-- Login -->
-		<script src="modules/login/login.js" type="text/javascript"></script>
-		<script src="modules/login/controllers/login.controller.js" type="text/javascript"></script>
+		<!--<script src="modules/login/login.js" type="text/javascript"></script>
+		<script src="modules/login/controllers/login.controller.js" type="text/javascript"></script> -->
 		<!-- Home -->
 		<script src="modules/home/home.js" type="text/javascript"></script>
 		<script src="modules/home/controllers/home.controller.js" type="text/javascript"></script>
+		<script type="text/javascript">
+			$(function(){
+			  $('#nav').click(function() {
+			    $(this).toggleClass('open');
+			  });
+			});
+		</script>
 	</body>
 </html>
